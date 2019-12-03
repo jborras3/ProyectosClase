@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <title>LMU02E06</title>
+        <link media=all href="CSS/indexestil.css" type=text/css rel=stylesheet>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Reserva en el Hotel Balanyä</h1>
+
+        </header>
+
+        <section>
+
+            <aside>
+
+                <ul>
+
+                    <a href="#eti1"><li>Dades personals</li></a>
+                    <a href="#eti2"><li>Informació de la estancia</li></a>
+                    <a href="#eti3"><li>Serveis</li></a>
+                    <a href="#eti4"><li>Comentari</li></a>
+
+                </ul>
+
+            </aside>
+
+            <article>
+
+                <h3>Formulari de reserves</h3>
+
+                <form action="http://desenvolupament.xaviersastre.cat/reserves.php" method="POST">
+
+                    <div>
+
+                         <fieldset>
+
+                            <legend><a name="eti1"></a>Dades personals</legend>
+
+                                <p class="titulf">Nom:</p>
+                                    
+                                    <input type="text" name="nom"><br/>
+
+                                <p class="titulf">Llinatges:</p>
+                                    
+                                    <input type="text" name="llinatges"><br/>
+
+                                <p class="titulf">Telefon:</p>
+                                    
+                                    <input type="tel" name="telefon"><br/>
+
+                                <p class="titulf">Correu Electronic:</p>
+                                    <input type="email" name="llinatges"><br/>
+                                
+
+                        </fieldset>
+
+                    </div>
+
+                    <div>
+
+                        <fieldset>
+
+                            <legend><a name="eti2"></a>Informació de la estancia</legend>
+
+                                <p class="titulf">Numero de nits de la estancia:</p>
+                                    
+                                    <input type="number" name="nit" min="1"><br/>
+
+                                <p class="titulf">Data de entrada:</p>
+                                    
+                                    <input type="date" name="diaMes"><br/>
+
+                                <p class="titulf">Data de sortida:</p>
+                                    
+                                    <input type="date" name="diaMes"><br/>    
+
+                        </fieldset>
+
+                    </div>
+
+                    <div>
+
+                        <fieldset>
+
+                            <legend><a name="eti3"></a>Serveis</legend>
+
+                                <p class="titulf">Tipus de habitació:</p>
+                                    
+                                    <input type="radio" name="habitacio">Simple<br/>
+                                    <input type="radio" name="habitacio">Doble<br/>
+                                    <input type="radio" name="habitacio">Matrimonial<br/>
+
+                                <p class="titulf">Extras:</p>
+                                    
+                                    <input type="checkbox" name="berenar">Berenar<br/>
+                                    <input type="checkbox" name="dinar">Dinar<br/>
+                                    <input type="checkbox" name="sopar">Sopar<br/>
+                                    <input type="checkbox" name="llitaddicional">Llit adicional<br/>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div>
+
+                        <fieldset>
+
+                            <legend><a name="eti4"></a>Comentari</legend>
+
+                                <textarea name="comentaris"></textarea>
+
+                        </fieldset>
+
+                        <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </p>
+
+                    </div>
+
+                </form>
+
+
+            </article>
+
+        </section>
+
+        <footer>
+
+            <p>LMU02E06 Jaume Borràs 11/11/19</p>
+
+        </footer>
+
+    </body>
+
+</html>

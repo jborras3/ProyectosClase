@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<documento>
+        <p>Mi Primer <destacar importancia="1">documento
+        XML</destacar></p>
+        <p>Comienza con la etiqueta</p> 
+<!--He eliminado el <document> sobrante en vez de cerrarlo porque tenia el mismo elemento como raiz-->
+        <p>A continuacion colocamos un elemento sin contenido</p>
+        <imagen fichero="imagen.gif"/>
+</documento>
+
+<?xml version="1.0"?>
+<libros>
+        <libro id="quijote">
+            <titulo>El Quijote</titulo>
+            <autor nombre="cervantes"/>
+            <descripcion>Es el mejor libro de cervantes.</descripcion>
+        </libro>
+</libros>

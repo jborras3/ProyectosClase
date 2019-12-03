@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<llista>
+
+    <tienda>
+
+        <nombre>Mercadona</nombre>
+
+        <producto>
+            <nombre>Ous mitjans</nombre>
+            <marca>El cultivador</marca>
+            <cantidat>12</cantidat>
+            <medida>unidades</medida>
+        </producto>
+
+        <producto>
+            <nombre>Crema de cacauet</nombre>
+            <marca>Hacendado</marca>
+            <cantidat>2</cantidat>
+            <medida>pots</medida>
+        </producto>
+
+    </tienda>
+
+    <tienda>
+
+        <nombre>Peixeteria</nombre>
+
+        <producto>
+            <nombre>Pop</nombre>
+            <marca/>
+            <cantidat>1</cantidat>
+            <medida>kilo</medida>
+        </producto>
+
+        <producto>
+            <nombre>Llangosta</nombre>
+            <marca/>
+            <cantidat>2</cantidat>
+            <medida>unidades</medida>
+        </producto>
+
+    </tienda>
+
+    <tienda>
+
+        <nombre>Carniceria</nombre>
+
+        <producto>
+            <nombre>&quot;Vacío&quot; argentí</nombre>
+            <marca/>
+            <cantidat>1</cantidat>
+            <medida>kilo</medida>
+        </producto>
+
+    </tienda>
+
+</llista>
