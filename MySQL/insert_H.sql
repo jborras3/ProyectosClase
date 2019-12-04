@@ -1,4 +1,4 @@
-insert into p2.h (codi_hospital, dni, apellidos, funcion, localidad)
+insert into p2.h (codi_hospital, dni, apellidos, funcion, salario, localidad)
 values (1,'12345678','García Hermández, Eladio','CONSERJE','1200','LORCA'),
 (1,'87654321','Fuentes Bermejor, Carlos','DIRECTOR',2000,'MURCIA'),
 (2,'55544433','González Marin, Alicia','CONSERJE',1200,'MURCIA'),
