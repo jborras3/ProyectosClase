@@ -1,3 +1,2 @@
-select * from p2.h
-	where apellido like 'M%';
+select * from p2.h where apellidos like 'M%';
 	

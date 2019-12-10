@@ -2,16 +2,17 @@
 <!DOCTYPE factura [
     <!ELEMENT factura (dades_empresa, dades_client, dades_factura)>
         <!ATTLIST factura num_fac ID #REQUIRED>
-        <!ATTLIST poblacio cod_postal ID #REQUIRED>
         <!ELEMENT dades_empresa (nom, adresa, poblacio, provincia, cif, telefon)>
+        <!ELEMENT dades_client (nom, adresa_env, poblacio, provincia)>
+        <!ATTLIST dades_client num_cli ID #REQUIRED>
             <!ELEMENT nom (#PCDATA)>
             <!ELEMENT adresa (#PCDATA)>
             <!ELEMENT poblacio (#PCDATA)>
+            <!ATTLIST poblacio cod_postal ID #REQUIRED>
             <!ELEMENT provincia (#PCDATA)>
             <!ELEMENT cif (#PCDATA)>
             <!ELEMENT telefon ANY>
-        
-    
+            <!ELEMENT adresa_env (#PCDATA)>
 ]>
     
 
