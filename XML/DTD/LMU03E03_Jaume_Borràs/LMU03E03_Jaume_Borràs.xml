@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PanelAereopuerto [
+<!ELEMENT PanelAereopuerto (vuelo+, data)>
+        <!ELEMENT vuelo (diari?, origen, destí, hora_sortida, hora_arribada)>
+            <!ATTLIST vuelo codi ID #REQUIRED>
+            <!ATTLIST vuelo estat (C|E|R) "E">
+            <!ELEMENT diari EMPTY>
+            <!ELEMENT origen (#PCDATA)>
+            <!ELEMENT destí (#PCDATA)>
+            <!ELEMENT hora_sortida (#PCDATA)>
+            <!ELEMENT hora_arribada (#PCDATA)>
+        <!ELEMENT data (#PCDATA)>
+]>
+
+<PanelAereopuerto>
+
+    <vuelo codi="V22" estat="R">
+        <diari/>
+        <origen>JFK</origen>
+        <destí>CGX</destí>
+        <hora_sortida>9:30</hora_sortida>
+        <hora_arribada>11:30</hora_arribada>
+    </vuelo>
+
+    <vuelo codi="V23" estat="C">
+        <origen>JFK</origen>
+        <destí>MIA</destí>
+        <hora_sortida>10:15</hora_sortida>
+        <hora_arribada>11:15</hora_arribada>
+    </vuelo>
+
+    <data>09 de desembre de 2019</data>
+
+</PanelAereopuerto>

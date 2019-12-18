@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (dades_empresa, dades_client, dades_factura)>
+        <!ATTLIST factura num_fac ID #REQUIRED>
+        <!ELEMENT dades_empresa (nom, adresa, poblacio, provincia, cif, telefon?, fax?)>
+        <!ELEMENT dades_client (nom, adresa_env, poblacio, provincia)>
+        <!ATTLIST dades_client num_cli ID #REQUIRED>
+            <!ELEMENT nom (#PCDATA)>
+            <!ELEMENT adresa (#PCDATA)>
+            <!ELEMENT poblacio (#PCDATA)>
+            <!ATTLIST poblacio cod_postal CDATA #REQUIRED>
+            <!ELEMENT provincia (#PCDATA)>
+            <!ELEMENT cif (#PCDATA)>
+            <!ELEMENT telefon EMPTY>
+            <!ELEMENT fax EMPTY>
+            <!ATTLIST telefon num_tel CDATA #FIXED "971776688">
+            <!ATTLIST fax num_fax CDATA #FIXED "971776699">
+            <!ELEMENT adresa_env (#PCDATA)>
+        <!ELEMENT dades_factura (data, linia+, base, quota_iva, total)>
+            <!ATTLIST dades_factura num_com ID #REQUIRED>
+            <!ATTLIST dades_factura iva (16|21) "16">
+            <!ATTLIST dades_factura f_pag (efectiu|targeta|paypal) "paypal">
+            <!ATTLIST dades_factura moneda (euro) "euro">
+            <!ELEMENT data (#PCDATA)>
+            <!ELEMENT linia (ref, desc, quant, preu, import)>
+                <!ELEMENT ref (#PCDATA)>
+                <!ELEMENT desc (#PCDATA)>
+                <!ELEMENT quant (#PCDATA)>
+                <!ELEMENT preu (#PCDATA)>
+                <!ELEMENT import (#PCDATA)>
+            <!ELEMENT base (#PCDATA)>
+            <!ELEMENT quota_iva (#PCDATA)>
+            <!ELEMENT total (#PCDATA)>
+]>
+    
+
+<factura num_fac="XSF0272">
+    <dades_empresa>
+        <nom>Equips Digitals Tofol S.L.</nom>
+        <adresa>Avinguda la que sigui</adresa>
+        <poblacio cod_postal="07400">Buger</poblacio>
+        <provincia>Illes Balears</provincia>
+        <cif>Q-12345678</cif>
+        <telefon/>
+    </dades_empresa>
+    <dades_client num_cli="c666">
+        <nom>El nom que vulgueu</nom>
+        <adresa_env>Carrer Vatua nº7 4ºd</adresa_env>
+        <poblacio cod_postal="07016">Palma</poblacio>
+        <provincia>Illes Balears</provincia>
+    </dades_client>
+    <dades_factura num_com="p748" iva="16" f_pag= "paypal" moneda="euro">
+        <data>12-11-2018</data>
+        <linia>
+            <ref>PIII230/8</ref>
+            <desc>MICRO PENTIUM III 230MHZ ... Darrera generació</desc>
+            <quant>1</quant>
+            <preu>230</preu>
+            <import>266,80</import>
+        </linia>
+        <linia>
+            <ref>PBPIII</ref>
+            <desc>PLACA BASE PIII</desc>
+            <quant>1</quant>
+            <preu>180</preu>
+            <import>208,80</import>
+        </linia>
+        <linia>
+            <ref>MEM512M32</ref>
+            <desc>DIMM DDR 512MB</desc>
+            <quant>2</quant>
+            <preu>40</preu>
+            <import>92,80</import>
+        </linia>
+        <linia>
+            <ref>HD250IDE</ref>
+            <desc>DISC DUR 40GB IDE</desc>
+            <quant>4</quant>
+            <preu>120</preu>
+            <import>556,80</import>
+        </linia>
+        <base>970,00</base>
+        <quota_iva>155,20</quota_iva>
+        <total>1125,20</total>
+    </dades_factura>
+</factura>

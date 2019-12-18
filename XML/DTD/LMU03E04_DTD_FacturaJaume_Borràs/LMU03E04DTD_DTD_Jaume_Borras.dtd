@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+    <!ELEMENT factura (dades_empresa, dades_client, dades_factura)>
+        <!ATTLIST factura num_fac ID #REQUIRED>
+        <!ELEMENT dades_empresa (nom, adresa, poblacio, provincia, cif, telefon?, fax?)>
+        <!ELEMENT dades_client (nom, adresa_env, poblacio, provincia)>
+        <!ATTLIST dades_client num_cli ID #REQUIRED>
+            <!ELEMENT nom (#PCDATA)>
+            <!ELEMENT adresa (#PCDATA)>
+            <!ELEMENT poblacio (#PCDATA)>
+            <!ATTLIST poblacio cod_postal CDATA #REQUIRED>
+            <!ELEMENT provincia (#PCDATA)>
+            <!ELEMENT cif (#PCDATA)>
+            <!ELEMENT telefon EMPTY>
+            <!ELEMENT fax EMPTY>
+            <!ATTLIST telefon num_tel CDATA #FIXED "971776688">
+            <!ATTLIST fax num_fax CDATA #FIXED "971776699">
+            <!ELEMENT adresa_env (#PCDATA)>
+        <!ELEMENT dades_factura (data, linia+, base, quota_iva, total)>
+            <!ATTLIST dades_factura num_com ID #REQUIRED>
+            <!ATTLIST dades_factura iva (16|21) "16">
+            <!ATTLIST dades_factura f_pag (efectiu|targeta|paypal) "paypal">
+            <!ATTLIST dades_factura moneda (euro) "euro">
+            <!ELEMENT data (#PCDATA)>
+            <!ELEMENT linia (ref, desc, quant, preu, import)>
+                <!ELEMENT ref (#PCDATA)>
+                <!ELEMENT desc (#PCDATA)>
+                <!ELEMENT quant (#PCDATA)>
+                <!ELEMENT preu (#PCDATA)>
+                <!ELEMENT import (#PCDATA)>
+            <!ELEMENT base (#PCDATA)>
+            <!ELEMENT quota_iva (#PCDATA)>
+            <!ELEMENT total (#PCDATA)>
+]>

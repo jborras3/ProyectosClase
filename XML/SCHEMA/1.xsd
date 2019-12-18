@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Liquid Studio 2018 (https://www.liquid-technologies.com) -->
+
+<xs:element name="pagaments">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string" minOccurs="1"  maxOccurs="3"/>
+            <xs:element name="dataNaixament" type="xs:date"/>
+            <xs:element name="hora" type="xs:time" maxOccurs="unbounded"/>
+            <xs:element name="preu" type="xs:double"/>
+            
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+<pagaments>
+  <nom>Tofol Verdera</nom>
+  <dataNaixament>1979-02-04</dataNaixament>
+  <hora>23:55:15</hora>
+  <hora>23:55:15</hora>
+  <preu>123.56</preu>
+  <quantitat>678</quantitat>
+  <pagat>true</pagat>
+</pagaments>
