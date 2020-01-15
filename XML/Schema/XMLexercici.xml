@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ubicaciones>
+<ubicaciones xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xs:noNamespaceSchemaLocation="XSDexercici.xsd">
     <ubicacion metros="5">
         este
     </ubicacion>
