@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ubicaciones>
+    <ubicacion metros="5">
+        este
+    </ubicacion>
+    <ubicacion metros="12">
+        sur
+    </ubicacion>
+</ubicaciones>
